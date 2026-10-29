@@ -12,4 +12,5 @@ def lista_productos():
 # /productos/categorias/alimentos
 @productos_bp.route("/categorias/<categoria>")
 def mostrar_categorias(categoria):
-    return f"<h3> Lista de produtos de la categoria: {categoria}</h3>"
+    return render_template('categoria.html', categoria=categoria)
+    # return f"<h3> Lista de produtos de la categoria: {categoria}</h3>"

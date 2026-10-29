@@ -6,4 +6,5 @@ blog_bp = Blueprint('blog', __name__, url_prefix="/blog", template_folder="templ
 # /blog/entrada/Nosotros
 @blog_bp.route("/entrada/<id>")
 def mostrar_entrada(id):
-    return f"<h3> Titulo de blog: {id}</h3>"
+    return render_template('blog.html', id=id)
+    

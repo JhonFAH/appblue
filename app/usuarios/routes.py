@@ -11,4 +11,5 @@ def lista_usuarios():
 # /usuarios/perfil/Bruno
 @usuarios_bp.route("/perfil/<nombre>")
 def perfil(nombre):
-    return f"<h3> Perfil del usuario: {nombre}</h3>"
+    return render_template('perfil.html',nombre=nombre)
+    # return f"<h3> Perfil del usuario: {nombre}</h3>"

@@ -5,6 +5,6 @@ admin_bp = Blueprint('admin',__name__,url_prefix='/admin',template_folder='templ
 # /admin/panel
 @admin_bp.route('/panel')
 def panel():
-    return f"<h2> Bienvenido al panel de administracion </h2>"
+    return render_template('panel.html')
 
 
